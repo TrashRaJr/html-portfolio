@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>My Skills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="star.png" alt="Its me, a star" height=75px width=75px class="star">
+    <h1>Bhavana Kumar - Skills</h1>
+  </div>
+  <div>
+    <ul class="nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="skills.html"class="active" style="background : #7BB689">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="exp.html">Experience</a></li>
+    </ul>
+  </div>
+  <div class="textbox">
+    <p>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            
+        </ul>
+    </p>
+  </div>
+  <div class="img-me">
+    <img src="mypic.jpg" height="320px" width="320px">
+  </div>
+
+  <div class="clr"></div>
+
+  <div>
+    <h2 class="photography-heading">I am interested in Photography!</h2>
+  </div>
+
+  <div class="photos">
+    <img src="img1.jpg" class="slideshow">
+    <img src="img2.jpg" class="slideshow">
+    <img src="img3.jpg" class="slideshow">
+    <img src="img4.jpg" class="slideshow">
+    <img src="img5.jpg" class="slideshow">
+    <img src="img6.jpg" class="slideshow">
+    <script>
+      var slideIndex = 0;
+      autoSlideshow();
+
+      function autoSlideshow() {
+          var i;
+          var x = document.getElementsByClassName("slideshow");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(autoSlideshow, 3000);
+    }
+  </script>
+  </div>
+  <div class="img-textbox">
+    <p>These are just a few of the pictures I am proud to have clicked!</p>
+  </div>
+  
+</body>
+</html>

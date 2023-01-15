@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>My Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--<svg width=75px height=75px class="star">
+    <polygon points="150,0 121,90 198,35 102,35 179,90" fill="yellow" stroke="orange" stroke-width="2" />
+  </svg>-->
+  <div class="container">
+    <h1>Bhavana Kumar</h1>
+  </div>
+  <div>
+    <ul class="nav">
+      <li><a href="home.html" class="active" style="background : #7BB689">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="exp.html" class="active">Experience</a></li>
+    </ul>
+  </div>
+  <div class="textbox">
+    <p>
+      Sorry for the bad website isko pakka theek karungi in the future... Hello all! My name is Bhavana Kumar and am pursuing B.Tech Computer Science (Core) at SRM Institute of Science and Technology, Kattankulathur. My hobbies include baking, travelling, playing the piano and collecting currency from different countries. I did my schooling from Chinmaya Vidyalaya in New Delhi, and now here I am in Chennai, gaining invaluable life experience. I realised that I could potentially make coding my career sitting in my school computer lab, when I genuinely had fun making my very first HTML website. The confused and unambitious Bhavana of then realised what she wanted to do in life. So this website is my take on what a resume should be. Rather than an uninteresting page of black and white text that describes my life, I want it to be this website. Thank you for taking out the time to check this out!
+    </p>
+  </div>
+  <div class="img-me">
+    <img src="mypic.jpg" height="320px" width="320px">
+  </div>
+
+  <div class="clr"></div>
+
+  <div>
+    <h2 class="photography-heading">I am interested in Photography!</h2>
+  </div>
+
+  <div class="photos">
+    <img src="img1.jpg" class="slideshow">
+    <img src="img2.jpg" class="slideshow">
+    <img src="img3.jpg" class="slideshow">
+    <img src="img4.jpg" class="slideshow">
+    <img src="img5.jpg" class="slideshow">
+    <img src="img6.jpg" class="slideshow">
+    <script>
+      var slideIndex = 0;
+      autoSlideshow();
+
+      function autoSlideshow() {
+          var i;
+          var x = document.getElementsByClassName("slideshow");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(autoSlideshow, 3000);
+    }
+  </script>
+  </div>
+  <div class="img-textbox">
+    <p>These are just a few of the pictures I am proud to have clicked!</p>
+  </div>
+  
+</body>
+</html>
